@@ -27,6 +27,13 @@
             background: #1e1e24;
         }
 
+        form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
         .wrapper {
             max-width: 500px;
             width: 100%;
@@ -99,37 +106,40 @@
             }
         }
     </style>
+    <script src="script.js"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="title">
-            Registration Form
+    <form action="main.html">
+        <div class="wrapper">
+            <div class="title">
+                Registration Form
+            </div>
+            <div class="form">
+                <div class="input_field">
+                    <label>First Name</label>
+                    <input type="text" class="input" required>
+                </div>
+                <div class="input_field">
+                    <label>Last Name</label>
+                    <input type="text" class="input" required>
+                </div>
+                <div class="input_field">
+                    <label>Password</label>
+                    <input type="password" class="input" required>
+                </div>
+                <div class="input_field">
+                    <label>Confirm Password</label>
+                    <input type="password" class="input" required>
+                </div>
+                <div class="input_field">
+                    <label>Email Address</label>
+                    <input type="text" class="input" required>
+                </div>
+                <div class="button">
+                    <a href="main.html"><button type="submit" onclick="mySubmit()" class="btn">Register</button></a>
+                </div>
+            </div>
         </div>
-        <div class="form">
-            <div class="input_field">
-                <label>First Name</label>
-                <input type="text" class="input">
-            </div>
-            <div class="input_field">
-                <label>Last Name</label>
-                <input type="text" class="input">
-            </div>
-            <div class="input_field">
-                <label>Password</label>
-                <input type="password" class="input">
-            </div>
-            <div class="input_field">
-                <label>Confirm Password</label>
-                <input type="password" class="input">
-            </div>
-            <div class="input_field">
-                <label>Email Address</label>
-                <input type="text" class="input">
-            </div>
-            <div class="button">
-                <input type="submit" value="Register" class="btn">
-            </div>
-        </div>
-    </div>
+    </form>
 </body>
 </html>
