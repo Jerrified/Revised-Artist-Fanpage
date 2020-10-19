@@ -4,8 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        header {
+            min-height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(135deg, #8aa4be 0%, #a9bdd4 74%);
+            position: relative;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="navbar">
+            <div class="menu">
+                <h3 class="logo">Artist<span>Fanpage</span></h3>
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="main">
+                <header>
+                    <div class="overlay">
+                        <div class="inner">
+                            <h2 class="title" style="margin-bottom: 25px;">Franciso Goya</h2>
+                            <p style="font-size: 25px;">
+                                Arguably the most important and influential artist of the late 18th century 
+                                and early 19th century, Franciso Goya captured the essence of the world around him 
+                                through his work.
+                            </p>
+                            <a href="about.html"><button class="btn">Read more</button></a>
+                        </div>
+                    </div>
+                </header>
+            </div>
+
+            <div class="shadow one"></div>
+            <div class="shadow two"></div>
+        </div>
+
+        <div class="links">
+            <ul>
+                <li>
+                    <a href="main.html" style="--i: 0.05s;">Landing</a>
+                </li>
+                <li>
+                    <a href="about.html" style="--i: 0.15s;">About</a>
+                </li>
+                <li>
+                    <a href="media.html" style="--i: 0.25s;">Media</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>&#169;Jeremiah Whitehurst 2020</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
