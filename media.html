@@ -12,6 +12,33 @@
             background-image: linear-gradient(135deg, #8aa4be 0%, #a9bdd4 74%);
             position: relative;
         }
+
+        .inner h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-top: 100px;
+            margin-bottom: 10px;
+        }
+
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 800px;
+            height: 500px;
+            right: 100%;
+        }
+
+        .image {
+            padding: 0 20px 20px;
+        }
+
+        img:hover {
+            opacity: .5;
+            transition: .9s;
+        }
     </style>
 </head>
 <body>
@@ -29,13 +56,14 @@
                 <header>
                     <div class="overlay">
                         <div class="inner">
+                            <h2>Goya's Image Gallery</h2>
                             <div class="images">
-                               <img src="Assets/Images/Children playing soldier.jpg" alt="Children playing soldier">
-                               <img src="Assets/Images/Children playing bullfighting.jpg" alt="Children playing bullfighting">
-                               <img src="Assets/Images/Children fighting over chestnuts.jpg" alt="Children fighting over chestnuts">
-                               <img src="Assets/Images/Blind Man's Bluff.jpg" alt="Blind Man's Bluff">
-                               <img src="Assets/Images/The Parasol.jpg" alt="The Parasol">
-                               <img src="" alt="">
+                               <img class="image" src="Assets/Images/Children playing soldier.jpg" alt="Children playing soldier">
+                               <img class="image" src="Assets/Images/Children playing bullfighting.jpg" alt="Children playing bullfighting">
+                               <img class="image" src="Assets/Images/Children fighting over chestnuts.jpg" alt="Children fighting over chestnuts">
+                               <img class="image" src="Assets/Images/Blind Man's Bluff.jpg" alt="Blind Man's Bluff" style="width: 200px;height: 200px;">
+                               <img class="image" src="Assets/Images/The Parasol.jpg" alt="The Parasol" style="width: 300px;height: 200px;">
+                               <img class="image" src="Assets/Images/Wedding.jpg" alt="The Wedding" style="width: 300px;height: 200px;">
                             </div>
                         </div>
                     </div>
