@@ -57,6 +57,58 @@
             margin-top: 10px;
             border: 5px solid #555;
         }
+
+        @media (max-width: 576px) {
+            img {
+                display: none;
+            }
+
+            h1 {
+                display: none;
+            }
+
+            .caption {
+                display: none;
+            }
+
+            .bar {
+                bottom: 100%;
+                left: 100%;
+            }
+
+            .links {
+                display: flex;
+                position: fixed;
+                align-items: flex-end;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            
+        }
+
+        @media (max-width: 992px) {
+            
+        }
+
+        @media (max-width: 1200px) {
+            img {
+                display: none;
+            }
+
+            h1 {
+                display: none;
+            }
+
+            .caption {
+                display: none;
+            }
+
+            .body p {
+                font-size: 30px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -80,7 +132,7 @@
                                         <div class="head">
                                             <h1>Francisco Goya</h1>
                                             <img src="Assets/Images/Franciso Goya young.jpg" alt="Young Franciso Goya">
-                                            <p style="font-style: italic;font-size: 9px;">Goya's Self-Protrait, c. 1773. Museo Camón Aznar, Zaragoza</p>
+                                            <p class="caption" style="font-style: italic;font-size: 9px;">Goya's Self-Protrait, c. 1773. Museo Camón Aznar, Zaragoza</p>
                                         </div>
                                         <div class="body">
                                             <p>
@@ -113,7 +165,7 @@
                                         </div>
                                         <div class="head2">
                                             <img src="Assets/Images/Franciso Goya.jpg" alt="Franciso Goya">
-                                            <p style="font-style: italic;font-size: 9px;">Portrait of Goya by Vicente López Portaña, c.  1826. Museo del Prado, Madrid</p>
+                                            <p class="caption" style="font-style: italic;font-size: 9px;">Portrait of Goya by Vicente López Portaña, c.  1826. Museo del Prado, Madrid</p>
                                         </div>
                                     </div>
                                 </div>
